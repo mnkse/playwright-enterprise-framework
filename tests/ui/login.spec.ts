@@ -16,6 +16,7 @@ type LoginData = {
 const loginData = JsonReader.read<LoginData>('test-data/loginData.json');
 
 test.describe('Login Page Tests', () => {
+
   test('@smoke should display login page successfully', async ({ page }) => {
     const loginPage = new LoginPage(page);
 
@@ -27,10 +28,13 @@ test.describe('Login Page Tests', () => {
     const loginPage = new LoginPage(page);
 
     await loginPage.navigateToLoginPage();
+
     await loginPage.login(
       loginData.invalidUser.email,
       loginData.invalidUser.password
     );
+
     await loginPage.verifyInvalidLoginMessage();
   });
+
 });
