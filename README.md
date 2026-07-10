@@ -32,16 +32,16 @@ This framework provides scalable UI and API automation using enterprise-level ar
 
 # 🛠 Tech Stack
 
-| Technology | Purpose |
-|------------|---------|
-| Playwright | UI Automation |
-| TypeScript | Programming Language |
-| Playwright API | API Testing |
-| Allure Report | Reporting |
-| GitHub Actions | CI/CD |
-| ESLint | Code Quality |
-| Prettier | Code Formatting |
-| Node.js | Runtime |
+| Technology     | Purpose              |
+| -------------- | -------------------- |
+| Playwright     | UI Automation        |
+| TypeScript     | Programming Language |
+| Playwright API | API Testing          |
+| Allure Report  | Reporting            |
+| GitHub Actions | CI/CD                |
+| ESLint         | Code Quality         |
+| Prettier       | Code Formatting      |
+| Node.js        | Runtime              |
 
 ---
 
