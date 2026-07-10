@@ -1,27 +1,127 @@
-name: Playwright Tests
+name: Playwright CI
+
 on:
   push:
     branches: [main, master]
   pull_request:
     branches: [main, master]
+
 jobs:
-  test:
-    timeout-minutes: 60
+  quality:
+    name: Quality Checks
     runs-on: ubuntu-latest
+    timeout-minutes: 15
+
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
-          node-version: lts/*
+          node-version: 20
+          cache: npm
+
       - name: Install dependencies
         run: npm ci
-      - name: Install Playwright Browsers
-        run: npx playwright install --with-deps
-      - name: Run Playwright tests
-        run: npx playwright test
-      - uses: actions/upload-artifact@v4
-        if: ${{ !cancelled() }}
+
+      - name: Check formatting
+        run: npm run format:check
+
+      - name: Run ESLint
+        run: npm run lint
+
+      - name: Run TypeScript typecheck
+        run: npm run typecheck
+
+  api-tests:
+    name: API Tests
+    needs: quality
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
-          name: playwright-report
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run API tests
+        run: npm run test:api
+
+      - name: Upload API Allure results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: api-allure-results
+          path: allure-results/
+          if-no-files-found: ignore
+          retention-days: 30
+
+      - name: Upload API Playwright report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: api-playwright-report
           path: playwright-report/
+          if-no-files-found: ignore
+          retention-days: 30
+
+  ui-tests:
+    name: UI Tests
+    needs: quality
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install Playwright browsers
+        run: npx playwright install --with-deps
+
+      - name: Run UI tests
+        run: npm run test:ui
+
+      - name: Upload UI Playwright report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ui-playwright-report
+          path: playwright-report/
+          if-no-files-found: ignore
+          retention-days: 30
+
+      - name: Upload UI Allure results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ui-allure-results
+          path: allure-results/
+          if-no-files-found: ignore
+          retention-days: 30
+
+      - name: Upload UI test results
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ui-test-results
+          path: test-results/
+          if-no-files-found: ignore
           retention-days: 30
