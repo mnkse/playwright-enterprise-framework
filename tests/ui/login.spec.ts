@@ -1,5 +1,4 @@
-import { test } from '@playwright/test';
-import { LoginPage } from '../../pages/LoginPage';
+import { test } from '../../fixtures/baseFixture';
 import { JsonReader } from '../../utils/JsonReader';
 
 type LoginData = {
@@ -16,17 +15,12 @@ type LoginData = {
 const loginData = JsonReader.read<LoginData>('test-data/loginData.json');
 
 test.describe('Login Page Tests', () => {
-
-  test('@smoke should display login page successfully', async ({ page }) => {
-    const loginPage = new LoginPage(page);
-
+  test('@smoke should display login page successfully', async ({ loginPage }) => {
     await loginPage.navigateToLoginPage();
     await loginPage.verifyLoginPageIsVisible();
   });
 
-  test('@regression should show error message for invalid login', async ({ page }) => {
-    const loginPage = new LoginPage(page);
-
+  test('@regression should show error message for invalid login', async ({ loginPage }) => {
     await loginPage.navigateToLoginPage();
 
     await loginPage.login(
@@ -36,5 +30,4 @@ test.describe('Login Page Tests', () => {
 
     await loginPage.verifyInvalidLoginMessage();
   });
-
 });
