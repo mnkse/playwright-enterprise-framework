@@ -1,1 +1,146 @@
-{"uuid":"4a4e88fd-2b66-4794-bc77-bbc55052b15e","name":"should delete a user","historyId":"369aa9d867143a85230abf94b8e30dd8:b444eb0fbe6390c71e68b51dd25701fc","status":"failed","statusDetails":{"message":"Error: apiRequestContext.delete: getaddrinfo ENOTFOUND test-api.example.com\nCall log:\n  - → DELETE https://test-api.example.com/users/1\n    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:151.0) Gecko/20100101 Firefox/151.0\n    - accept: */*\n    - accept-encoding: gzip,deflate,br\n","trace":"Error: apiRequestContext.delete: getaddrinfo ENOTFOUND test-api.example.com\nCall log:\n  - → DELETE https://test-api.example.com/users/1\n    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:151.0) Gecko/20100101 Firefox/151.0\n    - accept: */*\n    - accept-encoding: gzip,deflate,br\n\n    at UsersApiClient.sendRequest (C:\\Users\\Kadir\\Desktop\\menekse - batudan gelenler\\playwright\\playwright-enterprise-framework\\api\\BaseApiClient.ts:102:45)\n    at UsersApiClient.delete (C:\\Users\\Kadir\\Desktop\\menekse - batudan gelenler\\playwright\\playwright-enterprise-framework\\api\\BaseApiClient.ts:41:23)\n    at UsersApiClient.deleteUser (C:\\Users\\Kadir\\Desktop\\menekse - batudan gelenler\\playwright\\playwright-enterprise-framework\\api\\UsersApiClient.ts:29:29)\n    at C:\\Users\\Kadir\\Desktop\\menekse - batudan gelenler\\playwright\\playwright-enterprise-framework\\tests\\api\\users.api.spec.ts:101:43"},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"Create request context","start":1783678536987,"uuid":"1ea39d05-b362-45cb-a872-d19ce63aec59","stop":1783678537000}],"attachments":[],"parameters":[],"name":"Fixture \"request\"","start":1783678536977,"uuid":"a5c14992-fbc3-4771-b361-51fab9417cd9","stop":1783678537004}],"attachments":[],"parameters":[],"name":"Before Hooks","start":1783678536933,"uuid":"4d8d673b-4727-461a-9022-19038c786a5e","stop":1783678537005},{"status":"failed","statusDetails":{"message":"Error: apiRequestContext.delete: getaddrinfo ENOTFOUND test-api.example.com\nCall log:\n  - → DELETE https://test-api.example.com/users/1\n    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:151.0) Gecko/20100101 Firefox/151.0\n    - accept: */*\n    - accept-encoding: gzip,deflate,br\n","trace":"Error: apiRequestContext.delete: getaddrinfo ENOTFOUND test-api.example.com\nCall log:\n  - → DELETE https://test-api.example.com/users/1\n    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:151.0) Gecko/20100101 Firefox/151.0\n    - accept: */*\n    - accept-encoding: gzip,deflate,br\n\n    at UsersApiClient.sendRequest (C:\\Users\\Kadir\\Desktop\\menekse - batudan gelenler\\playwright\\playwright-enterprise-framework\\api\\BaseApiClient.ts:102:45)\n    at UsersApiClient.delete (C:\\Users\\Kadir\\Desktop\\menekse - batudan gelenler\\playwright\\playwright-enterprise-framework\\api\\BaseApiClient.ts:41:23)\n    at UsersApiClient.deleteUser (C:\\Users\\Kadir\\Desktop\\menekse - batudan gelenler\\playwright\\playwright-enterprise-framework\\api\\UsersApiClient.ts:29:29)\n    at C:\\Users\\Kadir\\Desktop\\menekse - batudan gelenler\\playwright\\playwright-enterprise-framework\\tests\\api\\users.api.spec.ts:101:43"},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1783678537029,"name":"DELETE \"/users/1\"","uuid":"c44c5cdf-e3d3-476a-8523-900e05cdc278","stop":1783678537085},{"statusDetails":{},"stage":"finished","steps":[],"attachments":[{"name":"error-context","source":"94dd03e0-2c41-4a8d-930a-25d38c59d697-attachment.md","type":"text/markdown"}],"parameters":[],"start":1783678537237,"name":"error-context","stop":1783678537237},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"Fixture \"request\"","start":1783678537092,"uuid":"22302ac8-d2c2-4937-9876-ec65ec897d10","stop":1783678537114}],"attachments":[],"parameters":[],"name":"After Hooks","start":1783678537089,"uuid":"45873973-9b9d-4970-a08f-bd5ffb096734","stop":1783678537160}],"attachments":[{"name":"stdout","source":"be271b67-c4e3-4851-a459-5617993d5ffe-attachment.txt","type":"text/plain"}],"parameters":[{"name":"Project","value":"firefox"}],"labels":[{"name":"language","value":"javascript"},{"name":"framework","value":"playwright"},{"name":"package","value":"playwright-enterprise-framework.api.users.api.spec.ts"},{"name":"_fallbackTestCaseId","value":"778c3bef1c6590e349550dd67e59d9d3"},{"name":"titlePath","value":" > firefox > api\\users.api.spec.ts > Users API Tests"},{"name":"host","value":"LAPTOP-62157VE7"},{"name":"thread","value":"pid-47224-worker-4"},{"name":"parentSuite","value":"firefox"},{"name":"subSuite","value":"Users API Tests"}],"links":[],"start":1783678536809,"testCaseId":"369aa9d867143a85230abf94b8e30dd8","fullName":"api/users.api.spec.ts:95:7","titlePath":["playwright-enterprise-framework","api","users.api.spec.ts","Users API Tests"],"stop":1783678536951}
+{
+  "uuid": "4a4e88fd-2b66-4794-bc77-bbc55052b15e",
+  "name": "should delete a user",
+  "historyId": "369aa9d867143a85230abf94b8e30dd8:b444eb0fbe6390c71e68b51dd25701fc",
+  "status": "failed",
+  "statusDetails": {
+    "message": "Error: apiRequestContext.delete: getaddrinfo ENOTFOUND test-api.example.com\nCall log:\n  - → DELETE https://test-api.example.com/users/1\n    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:151.0) Gecko/20100101 Firefox/151.0\n    - accept: */*\n    - accept-encoding: gzip,deflate,br\n",
+    "trace": "Error: apiRequestContext.delete: getaddrinfo ENOTFOUND test-api.example.com\nCall log:\n  - → DELETE https://test-api.example.com/users/1\n    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:151.0) Gecko/20100101 Firefox/151.0\n    - accept: */*\n    - accept-encoding: gzip,deflate,br\n\n    at UsersApiClient.sendRequest (C:\\Users\\Kadir\\Desktop\\menekse - batudan gelenler\\playwright\\playwright-enterprise-framework\\api\\BaseApiClient.ts:102:45)\n    at UsersApiClient.delete (C:\\Users\\Kadir\\Desktop\\menekse - batudan gelenler\\playwright\\playwright-enterprise-framework\\api\\BaseApiClient.ts:41:23)\n    at UsersApiClient.deleteUser (C:\\Users\\Kadir\\Desktop\\menekse - batudan gelenler\\playwright\\playwright-enterprise-framework\\api\\UsersApiClient.ts:29:29)\n    at C:\\Users\\Kadir\\Desktop\\menekse - batudan gelenler\\playwright\\playwright-enterprise-framework\\tests\\api\\users.api.spec.ts:101:43"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "Create request context",
+              "start": 1783678536987,
+              "uuid": "1ea39d05-b362-45cb-a872-d19ce63aec59",
+              "stop": 1783678537000
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "Fixture \"request\"",
+          "start": 1783678536977,
+          "uuid": "a5c14992-fbc3-4771-b361-51fab9417cd9",
+          "stop": 1783678537004
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "name": "Before Hooks",
+      "start": 1783678536933,
+      "uuid": "4d8d673b-4727-461a-9022-19038c786a5e",
+      "stop": 1783678537005
+    },
+    {
+      "status": "failed",
+      "statusDetails": {
+        "message": "Error: apiRequestContext.delete: getaddrinfo ENOTFOUND test-api.example.com\nCall log:\n  - → DELETE https://test-api.example.com/users/1\n    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:151.0) Gecko/20100101 Firefox/151.0\n    - accept: */*\n    - accept-encoding: gzip,deflate,br\n",
+        "trace": "Error: apiRequestContext.delete: getaddrinfo ENOTFOUND test-api.example.com\nCall log:\n  - → DELETE https://test-api.example.com/users/1\n    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:151.0) Gecko/20100101 Firefox/151.0\n    - accept: */*\n    - accept-encoding: gzip,deflate,br\n\n    at UsersApiClient.sendRequest (C:\\Users\\Kadir\\Desktop\\menekse - batudan gelenler\\playwright\\playwright-enterprise-framework\\api\\BaseApiClient.ts:102:45)\n    at UsersApiClient.delete (C:\\Users\\Kadir\\Desktop\\menekse - batudan gelenler\\playwright\\playwright-enterprise-framework\\api\\BaseApiClient.ts:41:23)\n    at UsersApiClient.deleteUser (C:\\Users\\Kadir\\Desktop\\menekse - batudan gelenler\\playwright\\playwright-enterprise-framework\\api\\UsersApiClient.ts:29:29)\n    at C:\\Users\\Kadir\\Desktop\\menekse - batudan gelenler\\playwright\\playwright-enterprise-framework\\tests\\api\\users.api.spec.ts:101:43"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1783678537029,
+      "name": "DELETE \"/users/1\"",
+      "uuid": "c44c5cdf-e3d3-476a-8523-900e05cdc278",
+      "stop": 1783678537085
+    },
+    {
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "error-context",
+          "source": "94dd03e0-2c41-4a8d-930a-25d38c59d697-attachment.md",
+          "type": "text/markdown"
+        }
+      ],
+      "parameters": [],
+      "start": 1783678537237,
+      "name": "error-context",
+      "stop": 1783678537237
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "Fixture \"request\"",
+          "start": 1783678537092,
+          "uuid": "22302ac8-d2c2-4937-9876-ec65ec897d10",
+          "stop": 1783678537114
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "name": "After Hooks",
+      "start": 1783678537089,
+      "uuid": "45873973-9b9d-4970-a08f-bd5ffb096734",
+      "stop": 1783678537160
+    }
+  ],
+  "attachments": [
+    {
+      "name": "stdout",
+      "source": "be271b67-c4e3-4851-a459-5617993d5ffe-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [{ "name": "Project", "value": "firefox" }],
+  "labels": [
+    { "name": "language", "value": "javascript" },
+    { "name": "framework", "value": "playwright" },
+    {
+      "name": "package",
+      "value": "playwright-enterprise-framework.api.users.api.spec.ts"
+    },
+    {
+      "name": "_fallbackTestCaseId",
+      "value": "778c3bef1c6590e349550dd67e59d9d3"
+    },
+    {
+      "name": "titlePath",
+      "value": " > firefox > api\\users.api.spec.ts > Users API Tests"
+    },
+    { "name": "host", "value": "LAPTOP-62157VE7" },
+    { "name": "thread", "value": "pid-47224-worker-4" },
+    { "name": "parentSuite", "value": "firefox" },
+    { "name": "subSuite", "value": "Users API Tests" }
+  ],
+  "links": [],
+  "start": 1783678536809,
+  "testCaseId": "369aa9d867143a85230abf94b8e30dd8",
+  "fullName": "api/users.api.spec.ts:95:7",
+  "titlePath": [
+    "playwright-enterprise-framework",
+    "api",
+    "users.api.spec.ts",
+    "Users API Tests"
+  ],
+  "stop": 1783678536951
+}

@@ -1,4 +1,4 @@
-import { Locator, Page } from '@playwright/test';
+import { Locator, Page } from "@playwright/test";
 
 export class BasePage {
   constructor(protected page: Page) {}
@@ -16,7 +16,7 @@ export class BasePage {
   }
 
   async getText(locator: Locator): Promise<string> {
-    return (await locator.textContent()) ?? '';
+    return (await locator.textContent()) ?? "";
   }
 
   async isVisible(locator: Locator): Promise<boolean> {
@@ -34,7 +34,7 @@ export class BasePage {
   async takeScreenshot(name: string): Promise<void> {
     await this.page.screenshot({
       path: `test-results/screenshots/${name}.png`,
-      fullPage: true
+      fullPage: true,
     });
   }
 }

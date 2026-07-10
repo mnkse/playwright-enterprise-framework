@@ -1,1 +1,146 @@
-{"uuid":"5f25d7e6-1636-4687-a1aa-8a337ec893a6","name":"should update a user","historyId":"1e541aae0847a9cb1b9d7346ab47f9c6:5bd835b0d6b1d4ada3b9f0db936e82c8","status":"failed","statusDetails":{"message":"Error: apiRequestContext.put: getaddrinfo ENOTFOUND test-api.example.com\nCall log:\n  - → PUT https://test-api.example.com/users/1\n    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.7827.55 Safari/537.36\n    - accept: */*\n    - accept-encoding: gzip,deflate,br\n    - content-type: application/json\n    - content-length: 53\n","trace":"Error: apiRequestContext.put: getaddrinfo ENOTFOUND test-api.example.com\nCall log:\n  - → PUT https://test-api.example.com/users/1\n    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.7827.55 Safari/537.36\n    - accept: */*\n    - accept-encoding: gzip,deflate,br\n    - content-type: application/json\n    - content-length: 53\n\n    at UsersApiClient.sendRequest (C:\\Users\\Kadir\\Desktop\\menekse - batudan gelenler\\playwright\\playwright-enterprise-framework\\api\\BaseApiClient.ts:95:39)\n    at UsersApiClient.put (C:\\Users\\Kadir\\Desktop\\menekse - batudan gelenler\\playwright\\playwright-enterprise-framework\\api\\BaseApiClient.ts:34:23)\n    at UsersApiClient.updateUser (C:\\Users\\Kadir\\Desktop\\menekse - batudan gelenler\\playwright\\playwright-enterprise-framework\\api\\UsersApiClient.ts:25:23)\n    at C:\\Users\\Kadir\\Desktop\\menekse - batudan gelenler\\playwright\\playwright-enterprise-framework\\tests\\api\\users.api.spec.ts:80:43"},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"Create request context","start":1783678535118,"uuid":"5e8a9cde-1f1e-409e-b90a-db5aa5e2ee2c","stop":1783678535129}],"attachments":[],"parameters":[],"name":"Fixture \"request\"","start":1783678535112,"uuid":"9ebcda67-4ad3-4cb3-9b8b-d290c0d8e66c","stop":1783678535130}],"attachments":[],"parameters":[],"name":"Before Hooks","start":1783678535087,"uuid":"468b85bf-317e-4267-a809-44c5795e8c5b","stop":1783678535131},{"status":"failed","statusDetails":{"message":"Error: apiRequestContext.put: getaddrinfo ENOTFOUND test-api.example.com\nCall log:\n  - → PUT https://test-api.example.com/users/1\n    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.7827.55 Safari/537.36\n    - accept: */*\n    - accept-encoding: gzip,deflate,br\n    - content-type: application/json\n    - content-length: 53\n","trace":"Error: apiRequestContext.put: getaddrinfo ENOTFOUND test-api.example.com\nCall log:\n  - → PUT https://test-api.example.com/users/1\n    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.7827.55 Safari/537.36\n    - accept: */*\n    - accept-encoding: gzip,deflate,br\n    - content-type: application/json\n    - content-length: 53\n\n    at UsersApiClient.sendRequest (C:\\Users\\Kadir\\Desktop\\menekse - batudan gelenler\\playwright\\playwright-enterprise-framework\\api\\BaseApiClient.ts:95:39)\n    at UsersApiClient.put (C:\\Users\\Kadir\\Desktop\\menekse - batudan gelenler\\playwright\\playwright-enterprise-framework\\api\\BaseApiClient.ts:34:23)\n    at UsersApiClient.updateUser (C:\\Users\\Kadir\\Desktop\\menekse - batudan gelenler\\playwright\\playwright-enterprise-framework\\api\\UsersApiClient.ts:25:23)\n    at C:\\Users\\Kadir\\Desktop\\menekse - batudan gelenler\\playwright\\playwright-enterprise-framework\\tests\\api\\users.api.spec.ts:80:43"},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1783678535146,"name":"PUT \"/users/1\"","uuid":"7d779384-74b7-4b18-8904-4477f30013a0","stop":1783678535176},{"statusDetails":{},"stage":"finished","steps":[],"attachments":[{"name":"error-context","source":"853f4296-f8a2-4f80-a64d-021670d3c2b3-attachment.md","type":"text/markdown"}],"parameters":[],"start":1783678535270,"name":"error-context","stop":1783678535270},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"Fixture \"request\"","start":1783678535179,"uuid":"63658cc0-200a-4c7e-9a3a-6084f699dc98","stop":1783678535189}],"attachments":[],"parameters":[],"name":"After Hooks","start":1783678535178,"uuid":"1afb0f10-3798-46f1-ae94-8131354a08fc","stop":1783678535211}],"attachments":[{"name":"stdout","source":"df0ec04f-df90-4d1d-982c-85e0fb4358d2-attachment.txt","type":"text/plain"}],"parameters":[{"name":"Project","value":"chromium"}],"labels":[{"name":"language","value":"javascript"},{"name":"framework","value":"playwright"},{"name":"package","value":"playwright-enterprise-framework.api.users.api.spec.ts"},{"name":"_fallbackTestCaseId","value":"4225af7814a560122b421e6946c71562"},{"name":"titlePath","value":" > chromium > api\\users.api.spec.ts > Users API Tests"},{"name":"host","value":"LAPTOP-62157VE7"},{"name":"thread","value":"pid-47224-worker-3"},{"name":"parentSuite","value":"chromium"},{"name":"subSuite","value":"Users API Tests"}],"links":[],"start":1783678535096,"testCaseId":"1e541aae0847a9cb1b9d7346ab47f9c6","fullName":"api/users.api.spec.ts:69:7","titlePath":["playwright-enterprise-framework","api","users.api.spec.ts","Users API Tests"],"stop":1783678535175}
+{
+  "uuid": "5f25d7e6-1636-4687-a1aa-8a337ec893a6",
+  "name": "should update a user",
+  "historyId": "1e541aae0847a9cb1b9d7346ab47f9c6:5bd835b0d6b1d4ada3b9f0db936e82c8",
+  "status": "failed",
+  "statusDetails": {
+    "message": "Error: apiRequestContext.put: getaddrinfo ENOTFOUND test-api.example.com\nCall log:\n  - → PUT https://test-api.example.com/users/1\n    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.7827.55 Safari/537.36\n    - accept: */*\n    - accept-encoding: gzip,deflate,br\n    - content-type: application/json\n    - content-length: 53\n",
+    "trace": "Error: apiRequestContext.put: getaddrinfo ENOTFOUND test-api.example.com\nCall log:\n  - → PUT https://test-api.example.com/users/1\n    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.7827.55 Safari/537.36\n    - accept: */*\n    - accept-encoding: gzip,deflate,br\n    - content-type: application/json\n    - content-length: 53\n\n    at UsersApiClient.sendRequest (C:\\Users\\Kadir\\Desktop\\menekse - batudan gelenler\\playwright\\playwright-enterprise-framework\\api\\BaseApiClient.ts:95:39)\n    at UsersApiClient.put (C:\\Users\\Kadir\\Desktop\\menekse - batudan gelenler\\playwright\\playwright-enterprise-framework\\api\\BaseApiClient.ts:34:23)\n    at UsersApiClient.updateUser (C:\\Users\\Kadir\\Desktop\\menekse - batudan gelenler\\playwright\\playwright-enterprise-framework\\api\\UsersApiClient.ts:25:23)\n    at C:\\Users\\Kadir\\Desktop\\menekse - batudan gelenler\\playwright\\playwright-enterprise-framework\\tests\\api\\users.api.spec.ts:80:43"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "Create request context",
+              "start": 1783678535118,
+              "uuid": "5e8a9cde-1f1e-409e-b90a-db5aa5e2ee2c",
+              "stop": 1783678535129
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "Fixture \"request\"",
+          "start": 1783678535112,
+          "uuid": "9ebcda67-4ad3-4cb3-9b8b-d290c0d8e66c",
+          "stop": 1783678535130
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "name": "Before Hooks",
+      "start": 1783678535087,
+      "uuid": "468b85bf-317e-4267-a809-44c5795e8c5b",
+      "stop": 1783678535131
+    },
+    {
+      "status": "failed",
+      "statusDetails": {
+        "message": "Error: apiRequestContext.put: getaddrinfo ENOTFOUND test-api.example.com\nCall log:\n  - → PUT https://test-api.example.com/users/1\n    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.7827.55 Safari/537.36\n    - accept: */*\n    - accept-encoding: gzip,deflate,br\n    - content-type: application/json\n    - content-length: 53\n",
+        "trace": "Error: apiRequestContext.put: getaddrinfo ENOTFOUND test-api.example.com\nCall log:\n  - → PUT https://test-api.example.com/users/1\n    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.7827.55 Safari/537.36\n    - accept: */*\n    - accept-encoding: gzip,deflate,br\n    - content-type: application/json\n    - content-length: 53\n\n    at UsersApiClient.sendRequest (C:\\Users\\Kadir\\Desktop\\menekse - batudan gelenler\\playwright\\playwright-enterprise-framework\\api\\BaseApiClient.ts:95:39)\n    at UsersApiClient.put (C:\\Users\\Kadir\\Desktop\\menekse - batudan gelenler\\playwright\\playwright-enterprise-framework\\api\\BaseApiClient.ts:34:23)\n    at UsersApiClient.updateUser (C:\\Users\\Kadir\\Desktop\\menekse - batudan gelenler\\playwright\\playwright-enterprise-framework\\api\\UsersApiClient.ts:25:23)\n    at C:\\Users\\Kadir\\Desktop\\menekse - batudan gelenler\\playwright\\playwright-enterprise-framework\\tests\\api\\users.api.spec.ts:80:43"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1783678535146,
+      "name": "PUT \"/users/1\"",
+      "uuid": "7d779384-74b7-4b18-8904-4477f30013a0",
+      "stop": 1783678535176
+    },
+    {
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "error-context",
+          "source": "853f4296-f8a2-4f80-a64d-021670d3c2b3-attachment.md",
+          "type": "text/markdown"
+        }
+      ],
+      "parameters": [],
+      "start": 1783678535270,
+      "name": "error-context",
+      "stop": 1783678535270
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "Fixture \"request\"",
+          "start": 1783678535179,
+          "uuid": "63658cc0-200a-4c7e-9a3a-6084f699dc98",
+          "stop": 1783678535189
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "name": "After Hooks",
+      "start": 1783678535178,
+      "uuid": "1afb0f10-3798-46f1-ae94-8131354a08fc",
+      "stop": 1783678535211
+    }
+  ],
+  "attachments": [
+    {
+      "name": "stdout",
+      "source": "df0ec04f-df90-4d1d-982c-85e0fb4358d2-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [{ "name": "Project", "value": "chromium" }],
+  "labels": [
+    { "name": "language", "value": "javascript" },
+    { "name": "framework", "value": "playwright" },
+    {
+      "name": "package",
+      "value": "playwright-enterprise-framework.api.users.api.spec.ts"
+    },
+    {
+      "name": "_fallbackTestCaseId",
+      "value": "4225af7814a560122b421e6946c71562"
+    },
+    {
+      "name": "titlePath",
+      "value": " > chromium > api\\users.api.spec.ts > Users API Tests"
+    },
+    { "name": "host", "value": "LAPTOP-62157VE7" },
+    { "name": "thread", "value": "pid-47224-worker-3" },
+    { "name": "parentSuite", "value": "chromium" },
+    { "name": "subSuite", "value": "Users API Tests" }
+  ],
+  "links": [],
+  "start": 1783678535096,
+  "testCaseId": "1e541aae0847a9cb1b9d7346ab47f9c6",
+  "fullName": "api/users.api.spec.ts:69:7",
+  "titlePath": [
+    "playwright-enterprise-framework",
+    "api",
+    "users.api.spec.ts",
+    "Users API Tests"
+  ],
+  "stop": 1783678535175
+}

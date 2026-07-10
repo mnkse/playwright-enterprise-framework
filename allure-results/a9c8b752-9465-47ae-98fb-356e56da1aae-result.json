@@ -1,1 +1,136 @@
-{"uuid":"a9c8b752-9465-47ae-98fb-356e56da1aae","name":"should return 404 for non-existing user","historyId":"2118ad2418c304e8bff74cf45715e220:5bd835b0d6b1d4ada3b9f0db936e82c8","status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"Create request context","start":1783678587677,"uuid":"8610382e-03f6-41a4-9039-e4c0f921299c","stop":1783678587680}],"attachments":[],"parameters":[],"name":"Fixture \"request\"","start":1783678587672,"uuid":"cda74618-d960-4176-b940-4eefdcaa9b0f","stop":1783678587682}],"attachments":[],"parameters":[],"name":"Before Hooks","start":1783678587653,"uuid":"b88edb8d-58a7-434e-bce5-b6b54500b833","stop":1783678587682},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1783678587689,"name":"GET \"/users/999999\"","uuid":"e9a08682-5457-4223-8ab2-3f9a877e9dba","stop":1783678587899},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1783678587903,"name":"Expect \"toBe\"","uuid":"09415001-2fb8-400b-b27c-cd52eaf8e70c","stop":1783678587904},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"Fixture \"request\"","start":1783678587904,"uuid":"591fc5a6-0ab3-41d4-95db-d15db6ff9f8d","stop":1783678587906}],"attachments":[],"parameters":[],"name":"After Hooks","start":1783678587904,"uuid":"287525a1-ec57-4770-8c97-6158c5e9b3a4","stop":1783678587917}],"attachments":[{"name":"stdout","source":"54d252f6-82e2-4d75-8716-e5943ee7a85c-attachment.txt","type":"text/plain"}],"parameters":[{"name":"Project","value":"chromium"}],"labels":[{"name":"language","value":"javascript"},{"name":"framework","value":"playwright"},{"name":"package","value":"playwright-enterprise-framework.api.users.api.spec.ts"},{"name":"_fallbackTestCaseId","value":"312e93cfb45329ef5abaa84d73b089a0"},{"name":"titlePath","value":" > chromium > api\\users.api.spec.ts > Users API Tests"},{"name":"host","value":"LAPTOP-62157VE7"},{"name":"thread","value":"pid-3768-worker-5"},{"name":"parentSuite","value":"chromium"},{"name":"subSuite","value":"Users API Tests"}],"links":[],"start":1783678587609,"testCaseId":"2118ad2418c304e8bff74cf45715e220","fullName":"api/users.api.spec.ts:106:7","titlePath":["playwright-enterprise-framework","api","users.api.spec.ts","Users API Tests"],"stop":1783678587845}
+{
+  "uuid": "a9c8b752-9465-47ae-98fb-356e56da1aae",
+  "name": "should return 404 for non-existing user",
+  "historyId": "2118ad2418c304e8bff74cf45715e220:5bd835b0d6b1d4ada3b9f0db936e82c8",
+  "status": "passed",
+  "statusDetails": {},
+  "stage": "finished",
+  "steps": [
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "Create request context",
+              "start": 1783678587677,
+              "uuid": "8610382e-03f6-41a4-9039-e4c0f921299c",
+              "stop": 1783678587680
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "Fixture \"request\"",
+          "start": 1783678587672,
+          "uuid": "cda74618-d960-4176-b940-4eefdcaa9b0f",
+          "stop": 1783678587682
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "name": "Before Hooks",
+      "start": 1783678587653,
+      "uuid": "b88edb8d-58a7-434e-bce5-b6b54500b833",
+      "stop": 1783678587682
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1783678587689,
+      "name": "GET \"/users/999999\"",
+      "uuid": "e9a08682-5457-4223-8ab2-3f9a877e9dba",
+      "stop": 1783678587899
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1783678587903,
+      "name": "Expect \"toBe\"",
+      "uuid": "09415001-2fb8-400b-b27c-cd52eaf8e70c",
+      "stop": 1783678587904
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "Fixture \"request\"",
+          "start": 1783678587904,
+          "uuid": "591fc5a6-0ab3-41d4-95db-d15db6ff9f8d",
+          "stop": 1783678587906
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "name": "After Hooks",
+      "start": 1783678587904,
+      "uuid": "287525a1-ec57-4770-8c97-6158c5e9b3a4",
+      "stop": 1783678587917
+    }
+  ],
+  "attachments": [
+    {
+      "name": "stdout",
+      "source": "54d252f6-82e2-4d75-8716-e5943ee7a85c-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [{ "name": "Project", "value": "chromium" }],
+  "labels": [
+    { "name": "language", "value": "javascript" },
+    { "name": "framework", "value": "playwright" },
+    {
+      "name": "package",
+      "value": "playwright-enterprise-framework.api.users.api.spec.ts"
+    },
+    {
+      "name": "_fallbackTestCaseId",
+      "value": "312e93cfb45329ef5abaa84d73b089a0"
+    },
+    {
+      "name": "titlePath",
+      "value": " > chromium > api\\users.api.spec.ts > Users API Tests"
+    },
+    { "name": "host", "value": "LAPTOP-62157VE7" },
+    { "name": "thread", "value": "pid-3768-worker-5" },
+    { "name": "parentSuite", "value": "chromium" },
+    { "name": "subSuite", "value": "Users API Tests" }
+  ],
+  "links": [],
+  "start": 1783678587609,
+  "testCaseId": "2118ad2418c304e8bff74cf45715e220",
+  "fullName": "api/users.api.spec.ts:106:7",
+  "titlePath": [
+    "playwright-enterprise-framework",
+    "api",
+    "users.api.spec.ts",
+    "Users API Tests"
+  ],
+  "stop": 1783678587845
+}

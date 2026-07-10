@@ -1,1 +1,172 @@
-{"uuid":"120cca50-0453-4f95-b207-f36b1cfa2c48","name":"should update a user","historyId":"1e541aae0847a9cb1b9d7346ab47f9c6:84e28e814b821ed013329cc8dbc467e0","status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"Create request context","start":1783677989998,"uuid":"ff05ff13-75c3-472a-9b66-bdb2a64a59fa","stop":1783677990005}],"attachments":[],"parameters":[],"name":"Fixture \"request\"","start":1783677989993,"uuid":"d115fe43-b6c1-47d0-93b1-f43419ffa2a0","stop":1783677990007}],"attachments":[],"parameters":[],"name":"Before Hooks","start":1783677989972,"uuid":"4bb4c4bb-ec7c-4c9c-9f97-7e5b7b16d528","stop":1783677990007},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1783677990020,"name":"PUT \"/users/1\"","uuid":"d20ef396-2639-40df-a490-bece9b983723","stop":1783677990901},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1783677990905,"name":"Expect \"toBe\"","uuid":"c2be803d-e63e-4a74-9bc0-d8993ef24edb","stop":1783677990907},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1783677990911,"name":"Expect \"toBe\"","uuid":"24838e7c-4182-4f87-801b-c0de909317da","stop":1783677990911},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1783677990911,"name":"Expect \"toBe\"","uuid":"59decc20-d3f5-4dfe-9003-e0b8d3f5b31b","stop":1783677990912},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1783677990912,"name":"Expect \"toBe\"","uuid":"900026ac-8e96-49a7-b08e-39b560e210f3","stop":1783677990912},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"Fixture \"request\"","start":1783677990913,"uuid":"a080fb74-fcd2-4335-9d38-a7b42a63c1e8","stop":1783677990917}],"attachments":[],"parameters":[],"name":"After Hooks","start":1783677990912,"uuid":"1e3be910-7eec-423b-8ab1-2c765b0ae5d5","stop":1783677990922}],"attachments":[{"name":"stdout","source":"67f8fbbb-0cea-4213-9db6-0acfa432299a-attachment.txt","type":"text/plain"}],"parameters":[{"name":"Project","value":"webkit"}],"labels":[{"name":"language","value":"javascript"},{"name":"framework","value":"playwright"},{"name":"package","value":"playwright-enterprise-framework.api.users.api.spec.ts"},{"name":"_fallbackTestCaseId","value":"4225af7814a560122b421e6946c71562"},{"name":"titlePath","value":" > webkit > api\\users.api.spec.ts > Users API Tests"},{"name":"host","value":"LAPTOP-62157VE7"},{"name":"thread","value":"pid-16000-worker-0"},{"name":"parentSuite","value":"webkit"},{"name":"subSuite","value":"Users API Tests"}],"links":[],"start":1783677989934,"testCaseId":"1e541aae0847a9cb1b9d7346ab47f9c6","fullName":"api/users.api.spec.ts:59:7","titlePath":["playwright-enterprise-framework","api","users.api.spec.ts","Users API Tests"],"stop":1783677990860}
+{
+  "uuid": "120cca50-0453-4f95-b207-f36b1cfa2c48",
+  "name": "should update a user",
+  "historyId": "1e541aae0847a9cb1b9d7346ab47f9c6:84e28e814b821ed013329cc8dbc467e0",
+  "status": "passed",
+  "statusDetails": {},
+  "stage": "finished",
+  "steps": [
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "Create request context",
+              "start": 1783677989998,
+              "uuid": "ff05ff13-75c3-472a-9b66-bdb2a64a59fa",
+              "stop": 1783677990005
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "Fixture \"request\"",
+          "start": 1783677989993,
+          "uuid": "d115fe43-b6c1-47d0-93b1-f43419ffa2a0",
+          "stop": 1783677990007
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "name": "Before Hooks",
+      "start": 1783677989972,
+      "uuid": "4bb4c4bb-ec7c-4c9c-9f97-7e5b7b16d528",
+      "stop": 1783677990007
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1783677990020,
+      "name": "PUT \"/users/1\"",
+      "uuid": "d20ef396-2639-40df-a490-bece9b983723",
+      "stop": 1783677990901
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1783677990905,
+      "name": "Expect \"toBe\"",
+      "uuid": "c2be803d-e63e-4a74-9bc0-d8993ef24edb",
+      "stop": 1783677990907
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1783677990911,
+      "name": "Expect \"toBe\"",
+      "uuid": "24838e7c-4182-4f87-801b-c0de909317da",
+      "stop": 1783677990911
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1783677990911,
+      "name": "Expect \"toBe\"",
+      "uuid": "59decc20-d3f5-4dfe-9003-e0b8d3f5b31b",
+      "stop": 1783677990912
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1783677990912,
+      "name": "Expect \"toBe\"",
+      "uuid": "900026ac-8e96-49a7-b08e-39b560e210f3",
+      "stop": 1783677990912
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "Fixture \"request\"",
+          "start": 1783677990913,
+          "uuid": "a080fb74-fcd2-4335-9d38-a7b42a63c1e8",
+          "stop": 1783677990917
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "name": "After Hooks",
+      "start": 1783677990912,
+      "uuid": "1e3be910-7eec-423b-8ab1-2c765b0ae5d5",
+      "stop": 1783677990922
+    }
+  ],
+  "attachments": [
+    {
+      "name": "stdout",
+      "source": "67f8fbbb-0cea-4213-9db6-0acfa432299a-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [{ "name": "Project", "value": "webkit" }],
+  "labels": [
+    { "name": "language", "value": "javascript" },
+    { "name": "framework", "value": "playwright" },
+    {
+      "name": "package",
+      "value": "playwright-enterprise-framework.api.users.api.spec.ts"
+    },
+    {
+      "name": "_fallbackTestCaseId",
+      "value": "4225af7814a560122b421e6946c71562"
+    },
+    {
+      "name": "titlePath",
+      "value": " > webkit > api\\users.api.spec.ts > Users API Tests"
+    },
+    { "name": "host", "value": "LAPTOP-62157VE7" },
+    { "name": "thread", "value": "pid-16000-worker-0" },
+    { "name": "parentSuite", "value": "webkit" },
+    { "name": "subSuite", "value": "Users API Tests" }
+  ],
+  "links": [],
+  "start": 1783677989934,
+  "testCaseId": "1e541aae0847a9cb1b9d7346ab47f9c6",
+  "fullName": "api/users.api.spec.ts:59:7",
+  "titlePath": [
+    "playwright-enterprise-framework",
+    "api",
+    "users.api.spec.ts",
+    "Users API Tests"
+  ],
+  "stop": 1783677990860
+}

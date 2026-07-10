@@ -1,1 +1,172 @@
-{"uuid":"7ca369d7-85bb-44f3-aea3-3b8e663cc36f","name":"should get user by id","historyId":"e89bdac10f0a7ebc0151c8040550346e:5bd835b0d6b1d4ada3b9f0db936e82c8","status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"Create request context","start":1783678587621,"uuid":"e47abd17-3a08-413d-a49c-804de0a15b96","stop":1783678587635}],"attachments":[],"parameters":[],"name":"Fixture \"request\"","start":1783678587613,"uuid":"dde56cac-f10b-4343-ab20-b023e6ce123b","stop":1783678587638}],"attachments":[],"parameters":[],"name":"Before Hooks","start":1783678587591,"uuid":"f441588d-7560-4e5d-b847-c087a268acc3","stop":1783678587638},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1783678587649,"name":"GET \"/users/1\"","uuid":"17c2dc95-d638-4c9c-8877-6ff68334bc8f","stop":1783678587917},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1783678587921,"name":"Expect \"toBe\"","uuid":"2af98397-febd-48f5-8fe2-c0e5cabcbe9e","stop":1783678587937},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1783678587923,"name":"Expect \"toBe\"","uuid":"18ccf7ce-e3c0-4e84-bfb5-0662044fd1af","stop":1783678587939},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1783678587924,"name":"Expect \"toBeTruthy\"","uuid":"6e1089dd-f4dd-4a98-a7fd-c23bde48908e","stop":1783678587939},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1783678587925,"name":"Expect \"toContain\"","uuid":"853672fa-d898-4d01-9a64-ba3dc54cabe5","stop":1783678587955},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"Fixture \"request\"","start":1783678587926,"uuid":"e460f00a-feab-46bb-9a17-500fa0ea1f17","stop":1783678587930}],"attachments":[],"parameters":[],"name":"After Hooks","start":1783678587925,"uuid":"fb736b72-aa99-4820-8848-597c9bc33808","stop":1783678587944}],"attachments":[{"name":"stdout","source":"dc26f7d3-2060-4cc1-b49a-1e2f3d62e045-attachment.txt","type":"text/plain"}],"parameters":[{"name":"Project","value":"chromium"}],"labels":[{"name":"language","value":"javascript"},{"name":"framework","value":"playwright"},{"name":"package","value":"playwright-enterprise-framework.api.users.api.spec.ts"},{"name":"_fallbackTestCaseId","value":"0bd8a57d7ee113c9c37f2322aaf17e22"},{"name":"titlePath","value":" > chromium > api\\users.api.spec.ts > Users API Tests"},{"name":"host","value":"LAPTOP-62157VE7"},{"name":"thread","value":"pid-3768-worker-1"},{"name":"parentSuite","value":"chromium"},{"name":"subSuite","value":"Users API Tests"}],"links":[],"start":1783678587557,"testCaseId":"e89bdac10f0a7ebc0151c8040550346e","fullName":"api/users.api.spec.ts:26:7","titlePath":["playwright-enterprise-framework","api","users.api.spec.ts","Users API Tests"],"stop":1783678587876}
+{
+  "uuid": "7ca369d7-85bb-44f3-aea3-3b8e663cc36f",
+  "name": "should get user by id",
+  "historyId": "e89bdac10f0a7ebc0151c8040550346e:5bd835b0d6b1d4ada3b9f0db936e82c8",
+  "status": "passed",
+  "statusDetails": {},
+  "stage": "finished",
+  "steps": [
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "Create request context",
+              "start": 1783678587621,
+              "uuid": "e47abd17-3a08-413d-a49c-804de0a15b96",
+              "stop": 1783678587635
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "Fixture \"request\"",
+          "start": 1783678587613,
+          "uuid": "dde56cac-f10b-4343-ab20-b023e6ce123b",
+          "stop": 1783678587638
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "name": "Before Hooks",
+      "start": 1783678587591,
+      "uuid": "f441588d-7560-4e5d-b847-c087a268acc3",
+      "stop": 1783678587638
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1783678587649,
+      "name": "GET \"/users/1\"",
+      "uuid": "17c2dc95-d638-4c9c-8877-6ff68334bc8f",
+      "stop": 1783678587917
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1783678587921,
+      "name": "Expect \"toBe\"",
+      "uuid": "2af98397-febd-48f5-8fe2-c0e5cabcbe9e",
+      "stop": 1783678587937
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1783678587923,
+      "name": "Expect \"toBe\"",
+      "uuid": "18ccf7ce-e3c0-4e84-bfb5-0662044fd1af",
+      "stop": 1783678587939
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1783678587924,
+      "name": "Expect \"toBeTruthy\"",
+      "uuid": "6e1089dd-f4dd-4a98-a7fd-c23bde48908e",
+      "stop": 1783678587939
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1783678587925,
+      "name": "Expect \"toContain\"",
+      "uuid": "853672fa-d898-4d01-9a64-ba3dc54cabe5",
+      "stop": 1783678587955
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "Fixture \"request\"",
+          "start": 1783678587926,
+          "uuid": "e460f00a-feab-46bb-9a17-500fa0ea1f17",
+          "stop": 1783678587930
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "name": "After Hooks",
+      "start": 1783678587925,
+      "uuid": "fb736b72-aa99-4820-8848-597c9bc33808",
+      "stop": 1783678587944
+    }
+  ],
+  "attachments": [
+    {
+      "name": "stdout",
+      "source": "dc26f7d3-2060-4cc1-b49a-1e2f3d62e045-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [{ "name": "Project", "value": "chromium" }],
+  "labels": [
+    { "name": "language", "value": "javascript" },
+    { "name": "framework", "value": "playwright" },
+    {
+      "name": "package",
+      "value": "playwright-enterprise-framework.api.users.api.spec.ts"
+    },
+    {
+      "name": "_fallbackTestCaseId",
+      "value": "0bd8a57d7ee113c9c37f2322aaf17e22"
+    },
+    {
+      "name": "titlePath",
+      "value": " > chromium > api\\users.api.spec.ts > Users API Tests"
+    },
+    { "name": "host", "value": "LAPTOP-62157VE7" },
+    { "name": "thread", "value": "pid-3768-worker-1" },
+    { "name": "parentSuite", "value": "chromium" },
+    { "name": "subSuite", "value": "Users API Tests" }
+  ],
+  "links": [],
+  "start": 1783678587557,
+  "testCaseId": "e89bdac10f0a7ebc0151c8040550346e",
+  "fullName": "api/users.api.spec.ts:26:7",
+  "titlePath": [
+    "playwright-enterprise-framework",
+    "api",
+    "users.api.spec.ts",
+    "Users API Tests"
+  ],
+  "stop": 1783678587876
+}

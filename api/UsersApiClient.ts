@@ -1,21 +1,19 @@
-import { APIResponse } from '@playwright/test';
-import { BaseApiClient } from './BaseApiClient';
-import { User } from '../models/User';
-import { CreateUserRequest } from '../models/CreateUserRequest';
+import { APIResponse } from "@playwright/test";
+import { BaseApiClient } from "./BaseApiClient";
+import { User } from "../models/User";
+import { CreateUserRequest } from "../models/CreateUserRequest";
 
 export class UsersApiClient extends BaseApiClient {
   async getAllUsers(): Promise<APIResponse> {
-    return await this.get('/users');
+    return await this.get("/users");
   }
 
   async getUserById(userId: number): Promise<APIResponse> {
     return await this.get(`/users/${userId}`);
   }
 
-  async createUser(
-    userData: CreateUserRequest,
-  ): Promise<APIResponse> {
-    return await this.post('/users', userData);
+  async createUser(userData: CreateUserRequest): Promise<APIResponse> {
+    return await this.post("/users", userData);
   }
 
   async updateUser(

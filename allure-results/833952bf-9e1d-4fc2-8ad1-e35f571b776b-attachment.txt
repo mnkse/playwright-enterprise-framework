@@ -1,0 +1,46 @@
+{
+  "timestamp": "2026-07-10T10:25:20.098Z",
+  "level": "INFO",
+  "message": "API request started",
+  "data": {
+    "method": "POST",
+    "url": "https://jsonplaceholder.typicode.com/users",
+    "requestBody": {
+      "name": "Menekse Erhan",
+      "username": "menekse",
+      "email": "menekse@example.com"
+    }
+  }
+}
+{
+  "timestamp": "2026-07-10T10:25:20.487Z",
+  "level": "INFO",
+  "message": "API response received",
+  "data": {
+    "method": "POST",
+    "url": "https://jsonplaceholder.typicode.com/users",
+    "status": 201,
+    "statusText": "Created"
+  }
+}
+{
+  "timestamp": "2026-07-10T10:25:20.487Z",
+  "level": "INFO",
+  "message": "Validating API response status",
+  "data": {
+    "expectedStatus": 201,
+    "actualStatus": 201,
+    "url": "https://jsonplaceholder.typicode.com/users"
+  }
+}
+{
+  "timestamp": "2026-07-10T10:25:20.499Z",
+  "level": "DEBUG",
+  "message": "API response body parsed",
+  "data": {
+    "name": "Menekse Erhan",
+    "username": "menekse",
+    "email": "menekse@example.com",
+    "id": 11
+  }
+}

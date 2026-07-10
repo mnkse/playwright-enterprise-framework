@@ -1,7 +1,7 @@
-import { defineConfig, devices } from '@playwright/test';
+import { defineConfig, devices } from "@playwright/test";
 
 export default defineConfig({
-  testDir: './tests',
+  testDir: "./tests",
 
   timeout: 30_000,
 
@@ -13,34 +13,34 @@ export default defineConfig({
 
   workers: process.env.CI ? 1 : undefined,
 
-reporter: [
-  ['list'],
-  ['html', { outputFolder: 'playwright-report', open: 'never' }],
-  [
-    'allure-playwright',
-    {
-      resultsDir: 'allure-results',
-      detail: true,
-      suiteTitle: false,
-    },
+  reporter: [
+    ["list"],
+    ["html", { outputFolder: "playwright-report", open: "never" }],
+    [
+      "allure-playwright",
+      {
+        resultsDir: "allure-results",
+        detail: true,
+        suiteTitle: false,
+      },
+    ],
   ],
-],
 
-  outputDir: 'test-results/',
+  outputDir: "test-results/",
 
   use: {
-    headless: process.env.CI === 'true',
+    headless: process.env.CI === "true",
 
     viewport: {
       width: 1920,
       height: 1080,
     },
 
-    screenshot: 'only-on-failure',
+    screenshot: "only-on-failure",
 
-    video: 'retain-on-failure',
+    video: "retain-on-failure",
 
-    trace: 'on-first-retry',
+    trace: "on-first-retry",
 
     actionTimeout: 10_000,
 
@@ -49,21 +49,21 @@ reporter: [
 
   projects: [
     {
-      name: 'chromium',
+      name: "chromium",
       use: {
-        ...devices['Desktop Chrome'],
+        ...devices["Desktop Chrome"],
       },
     },
     {
-      name: 'firefox',
+      name: "firefox",
       use: {
-        ...devices['Desktop Firefox'],
+        ...devices["Desktop Firefox"],
       },
     },
     {
-      name: 'webkit',
+      name: "webkit",
       use: {
-        ...devices['Desktop Safari'],
+        ...devices["Desktop Safari"],
       },
     },
   ],

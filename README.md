@@ -26,3 +26,4 @@ playwright-enterprise-framework
 ├── utils
 ├── playwright.config.ts
 └── package.json
+```

@@ -1,9 +1,5 @@
-import {
-  APIRequestContext,
-  APIResponse,
-  expect,
-} from '@playwright/test';
-import { Logger } from '../utils/Logger';
+import { APIRequestContext, APIResponse, expect } from "@playwright/test";
+import { Logger } from "../utils/Logger";
 
 export class BaseApiClient {
   constructor(
@@ -15,7 +11,7 @@ export class BaseApiClient {
     endpoint: string,
     headers?: Record<string, string>,
   ): Promise<APIResponse> {
-    return await this.sendRequest('GET', endpoint, undefined, headers);
+    return await this.sendRequest("GET", endpoint, undefined, headers);
   }
 
   protected async post<T>(
@@ -23,7 +19,7 @@ export class BaseApiClient {
     data?: T,
     headers?: Record<string, string>,
   ): Promise<APIResponse> {
-    return await this.sendRequest('POST', endpoint, data, headers);
+    return await this.sendRequest("POST", endpoint, data, headers);
   }
 
   protected async put<T>(
@@ -31,21 +27,21 @@ export class BaseApiClient {
     data?: T,
     headers?: Record<string, string>,
   ): Promise<APIResponse> {
-    return await this.sendRequest('PUT', endpoint, data, headers);
+    return await this.sendRequest("PUT", endpoint, data, headers);
   }
 
   protected async delete(
     endpoint: string,
     headers?: Record<string, string>,
   ): Promise<APIResponse> {
-    return await this.sendRequest('DELETE', endpoint, undefined, headers);
+    return await this.sendRequest("DELETE", endpoint, undefined, headers);
   }
 
   protected async assertStatus(
     response: APIResponse,
     expectedStatus: number,
   ): Promise<void> {
-    Logger.info('Validating API response status', {
+    Logger.info("Validating API response status", {
       expectedStatus,
       actualStatus: response.status(),
       url: response.url(),
@@ -57,20 +53,20 @@ export class BaseApiClient {
   protected async parseResponse<T>(response: APIResponse): Promise<T> {
     const responseBody = (await response.json()) as T;
 
-    Logger.debug('API response body parsed', responseBody);
+    Logger.debug("API response body parsed", responseBody);
 
     return responseBody;
   }
 
   private async sendRequest<T>(
-    method: 'GET' | 'POST' | 'PUT' | 'DELETE',
+    method: "GET" | "POST" | "PUT" | "DELETE",
     endpoint: string,
     data?: T,
     headers?: Record<string, string>,
   ): Promise<APIResponse> {
     const url = this.buildUrl(endpoint);
 
-    Logger.info('API request started', {
+    Logger.info("API request started", {
       method,
       url,
       headers,
@@ -80,30 +76,30 @@ export class BaseApiClient {
     let response: APIResponse;
 
     switch (method) {
-      case 'GET':
+      case "GET":
         response = await this.request.get(url, { headers });
         break;
 
-      case 'POST':
+      case "POST":
         response = await this.request.post(url, {
           data,
           headers,
         });
         break;
 
-      case 'PUT':
+      case "PUT":
         response = await this.request.put(url, {
           data,
           headers,
         });
         break;
 
-      case 'DELETE':
+      case "DELETE":
         response = await this.request.delete(url, { headers });
         break;
     }
 
-    Logger.info('API response received', {
+    Logger.info("API response received", {
       method,
       url,
       status: response.status(),
@@ -114,8 +110,8 @@ export class BaseApiClient {
   }
 
   private buildUrl(endpoint: string): string {
-    const normalizedBaseUrl = this.baseUrl.replace(/\/$/, '');
-    const normalizedEndpoint = endpoint.startsWith('/')
+    const normalizedBaseUrl = this.baseUrl.replace(/\/$/, "");
+    const normalizedEndpoint = endpoint.startsWith("/")
       ? endpoint
       : `/${endpoint}`;
 
