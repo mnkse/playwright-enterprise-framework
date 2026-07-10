@@ -1,0 +1,30 @@
+{
+  "timestamp": "2026-07-10T12:43:47.649Z",
+  "level": "INFO",
+  "message": "API request started",
+  "data": {
+    "method": "GET",
+    "url": "https://jsonplaceholder.typicode.com/users"
+  }
+}
+{
+  "timestamp": "2026-07-10T12:43:47.911Z",
+  "level": "INFO",
+  "message": "API response received",
+  "data": {
+    "method": "GET",
+    "url": "https://jsonplaceholder.typicode.com/users",
+    "status": 200,
+    "statusText": "OK"
+  }
+}
+{
+  "timestamp": "2026-07-10T12:43:47.912Z",
+  "level": "INFO",
+  "message": "Validating API response status",
+  "data": {
+    "expectedStatus": 200,
+    "actualStatus": 200,
+    "url": "https://jsonplaceholder.typicode.com/users"
+  }
+}
