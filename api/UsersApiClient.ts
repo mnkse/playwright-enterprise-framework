@@ -25,9 +25,7 @@ export class UsersApiClient extends BaseApiClient {
     return await this.put(`/users/${userId}`, userData);
   }
 
-  async deleteUser(
-    userId: number,
-  ): Promise<APIResponse> {
+  async deleteUser(userId: number): Promise<APIResponse> {
     return await this.delete(`/users/${userId}`);
   }
 
@@ -38,9 +36,7 @@ export class UsersApiClient extends BaseApiClient {
     await this.assertStatus(response, expectedStatus);
   }
 
-  async getResponseBody<T>(
-    response: APIResponse,
-  ): Promise<T> {
+  async getResponseBody<T>(response: APIResponse): Promise<T> {
     return await this.parseResponse<T>(response);
   }
 }

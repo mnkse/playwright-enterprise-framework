@@ -1,0 +1,7 @@
+export const ApiEndpoints = {
+  USERS: '/users',
+
+  userById(userId: number): string {
+    return `/users/${userId}`;
+  },
+} as const;

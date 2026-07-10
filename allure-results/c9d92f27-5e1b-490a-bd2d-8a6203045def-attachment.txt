@@ -1,0 +1,30 @@
+{
+  "timestamp": "2026-07-10T10:06:46.635Z",
+  "level": "INFO",
+  "message": "API request started",
+  "data": {
+    "method": "GET",
+    "url": "https://jsonplaceholder.typicode.com/users/999999"
+  }
+}
+{
+  "timestamp": "2026-07-10T10:06:46.896Z",
+  "level": "INFO",
+  "message": "API response received",
+  "data": {
+    "method": "GET",
+    "url": "https://jsonplaceholder.typicode.com/users/999999",
+    "status": 404,
+    "statusText": "Not Found"
+  }
+}
+{
+  "timestamp": "2026-07-10T10:06:46.896Z",
+  "level": "INFO",
+  "message": "Validating API response status",
+  "data": {
+    "expectedStatus": 404,
+    "actualStatus": 404,
+    "url": "https://jsonplaceholder.typicode.com/users/999999"
+  }
+}
