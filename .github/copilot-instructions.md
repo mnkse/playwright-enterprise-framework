@@ -450,3 +450,62 @@ A generated change is complete only when:
 - CI remains green
 - no secrets are committed
 - documentation is updated when required
+
+---
+
+## Playwright MCP Rules
+
+Use Playwright MCP for live application inspection when locator discovery or UI validation is required.
+
+MCP is an inspection and execution assistant. Permanent automated tests must always be generated as repository code.
+
+When using MCP:
+
+1. Capture a fresh snapshot before locating elements.
+2. Capture a new snapshot after navigation, search, filtering, modal actions, or major DOM changes.
+3. Do not reuse element references from older snapshots.
+4. Do not assume that visible text exists without checking the current DOM.
+5. Prefer semantic locators discovered from the current snapshot.
+6. Use MCP findings to create or update Page Objects.
+7. Do not leave the result only as a conversational MCP execution.
+8. Generate a permanent `.spec.ts` test file.
+9. Run the generated test from the terminal.
+10. Do not report success unless the repository test passes.
+
+---
+
+## Agent Workflow for UI Test Generation
+
+When asked to generate a UI test, follow this workflow:
+
+1. Inspect the current repository structure.
+2. Identify the existing fixture, BasePage, Page Object, test-data, and configuration patterns.
+3. Present a brief implementation plan before modifying files.
+4. Inspect the live application with Playwright MCP when necessary.
+5. Create or update the minimum required Page Object.
+6. Add or update the relevant custom fixture.
+7. Create the test under `tests/ui/`.
+8. Use the configured base URL instead of hard-coding the full URL.
+9. Run only the generated test first.
+10. Fix locator, compilation, lint, or type errors.
+11. Run formatting, lint, and type checking.
+12. Summarize:
+
+- files created
+- files modified
+- test command executed
+- final result
+
+Do not create a duplicate framework, configuration file, fixture system, or utility.
+
+---
+
+## Current Automation Exercise Behavior
+
+For the Automation Exercise Products page:
+
+- The `Blue Top` product is visible on the Products page.
+- Searching for `Blue Top` returns a matching product.
+- The text `SEARCHED PRODUCTS` was not found in the inspected DOM.
+- Do not generate an assertion for the `SEARCHED PRODUCTS` heading.
+- Use the visible `Blue Top` product as the expected search result.

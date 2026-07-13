@@ -33,6 +33,22 @@ test.describe("Users API Tests", () => {
     expect(user.email).toContain("@");
   });
 
+  test("should return user id 1 with a non-empty email", async ({
+    request,
+  }) => {
+    const usersApiClient = new UsersApiClient(request, apiConfig.baseUrl);
+
+    const response = await usersApiClient.getUserById(1);
+
+    await usersApiClient.assertResponseStatus(response, 200);
+
+    const user = await usersApiClient.getResponseBody<User>(response);
+
+    expect(user.id).toBe(1);
+    expect(user.email).toBeTruthy();
+    expect(user.email.length).toBeGreaterThan(0);
+  });
+
   test("should create a user", async ({ request }) => {
     const usersApiClient = new UsersApiClient(request, apiConfig.baseUrl);
 
